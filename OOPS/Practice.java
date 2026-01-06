@@ -3,7 +3,7 @@ package OOPS;
 public class Practice {
   public static void main(String[] args) {
     Vehicle v=new car();
-    v.print1();
+    ((car)v).print1();
 
     Vehicle O=new Vehicle();
     O.print();

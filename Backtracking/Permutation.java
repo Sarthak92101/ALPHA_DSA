@@ -1,12 +1,12 @@
 package Backtracking;
 
 public class Permutation {
-  public static void print(String str, String ans) {
-    // Base case
-    if (str.length() == 0) { 
-      System.out.println(ans);
-      return;
-    }
+public static void print(String str, String ans) {
+  // Base case
+  if (str.length() == 0) {
+    System.out.println(ans);
+    return;
+  }
 
     // Kaam
     for (int i = 0; i <str.length(); i++) {

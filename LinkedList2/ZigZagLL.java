@@ -16,7 +16,15 @@ public class ZigZagLL {
   public static Node head;
   public static Node tail;
 
-
+  public static void addFirst(int data) {
+    Node newNode = new Node(data);
+    if (head == null) {
+      head = tail = newNode;
+    } else {
+      newNode.next = head;
+      head = newNode;
+    }
+  }
 
   public void zigzag() {
     // find middle
@@ -81,5 +89,6 @@ public static void main(String[] args) {
 
   System.out.println("Zig-Zag List:");
   print();
+}
 }
 
